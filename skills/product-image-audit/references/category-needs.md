@@ -14,6 +14,7 @@ Order guidance is a default. Change it when the product's biggest objection is d
 - **Nice:** contents (packs per box, servings) · offer (subscription savings, guarantee) · founder · scale
 - **Order:** hero → benefits → results or proof → ingredients → how_to → comparison
 - **Biggest objections:** does it work, how long until I feel it, is it safe, does it taste good.
+- **Powders and drinks:** taste is a must-have image. Comparison should name the leaders the buyer is weighing (greens: AG1, Huel) and answer why pick this one.
 
 ## Skincare
 - **Must:** hero · texture (formula close-up or swatch) · results (before/after or clinical %) · ingredients (hero ingredients and what they do) · how_to (where it fits in a routine)
@@ -56,6 +57,7 @@ Order guidance is a default. Change it when the product's biggest objection is d
 - **Nice:** comparison · authority (press, awards) · how_to/care · offer (trial, warranty)
 - **Order:** hero → in_use → features → size → colours → proof
 - **Biggest objections:** will it fit my space, is it worth the price, what is it made of.
+- **Cookware FAQs to check on the images:** what is the coating made of (PFAS, PTFE, PFOA), is it really nonstick, does it work on my hob (induction, gas, electric), can it go in the oven and to what temperature, is it dishwasher-safe.
 
 ## Food and drink
 - **Must:** hero · in_use (served, poured, in a glass/bowl) · variety (flavours) · ingredients/nutrition

@@ -56,9 +56,11 @@ Open every image file and look at it. Never classify from the file name or alt t
 - **Style:** studio, lifestyle, customer photo (UGC), on-model, close-up/texture, flat lay, graphic/infographic, before-after, render/illustration.
 - **What a buyer learns from it**, in one plain line ("shows it fits in a back pocket").
 - **The copy on it, word for word, and its rung:** feature, benefit, or end result (the buyer's real goal). Read `references/image-copy.md` before this step and grade every slide against it. This matters as much as the picture.
-- **Problems:** text too small to read on a phone, cluttered, low resolution, near-duplicate of another image, claims with no proof in the gallery, wrong variant, a branded name that doesn't say what it is, a throwaway slogan. A promo on the image is fine (on slide 1 it's good), but note it must come off when the promo ends.
+- **Problems:** text too small to read on a phone, cluttered, visibly blurry or pixelated on a phone, near-duplicate of another image, claims with no proof in the gallery, wrong variant, a branded name that doesn't say what it is, a throwaway slogan. A promo on the image is fine (on slide 1 it's good), but note it must come off when the promo ends.
 
 Duplicates are judged by MESSAGE, not photo style. Three lifestyle photos that each carry a different claim (size, trainer use, mess-free) are three pieces of proof, not one job done three times. Praise one-claim-per-slide galleries.
+
+**Resolution is a minor point.** Shoppers buy on what an image says, not its pixel count, and on mobile a fast load matters more than extra sharpness. Never tell a brand to upload bigger files just because some images are 1000px and others 3000px. Flag resolution only when an image looks blurry or pixelated on a phone, and then as a small fix at the bottom. If image files are very heavy (over ~500 KB each), say they slow the page on mobile and suggest compressing them.
 
 Classification calls:
 - A study result or clinical stat card is **results**. **Authority** is a person, organisation or seal vouching for it (doctor, vet, press, certification).
@@ -79,8 +81,12 @@ Decide what kind of product it is (supplement, skincare, makeup, apparel, access
 - Never cut a slide because the page shows it further down. Shoppers who don't scroll miss those sections, so key things (reviews, comparison, cross-sell, shade range) belong in the gallery AND on the page. "You already have it lower on the page, put it in the gallery too" is good advice. "Cut it, the page has it" is not.
 - A cross-sell slide (a duo, a routine, a bundle) in the gallery is smart. Keep it. If there's none, mention it as an option.
 - **Gaps to check on every page, beyond the category list:**
+  - **Objections and FAQs.** Before judging the gallery, write down the 3-5 questions a buyer of THIS product has before buying: the worries (what is the coating made of, is it safe, does it really work) and the practical questions (will it work on my induction hob, can it go in the oven, does it fit my space). Then check which ones an image answers. Answering them on the images is one of the strongest things a gallery can do: credit it by name when present ("slide 3 goes straight at the PFAS worry, slide 4 answers induction and oven"), and list every unanswered one as a gap. A direct answer to a buyer's question ("Induction-safe", "Oven-safe to 550°F", "Made without PFAS") is good copy as it stands. Don't rewrite it into a benefit line that hides the answer.
   - **Real customers.** Testimonials and photos of real people (and their pets) using it, not only models or staged shots. Count model lifestyle shots separately from real-customer proof.
-  - **Comparison.** In a crowded category (beauty, apparel basics, treats, supplements, coffee) a vs-other-brands or vs-the-old-way slide. Missing comparison is a should-have gap there.
+  - **Comparison.** In a crowded category (beauty, apparel basics, treats, supplements, coffee) a vs-other-brands or vs-the-old-way slide. Missing comparison is a should-have gap there. Name the leaders a buyer is weighing it against (greens: AG1, Huel) and frame the gap as the buyer's question: "Why should I pick this over AG1?"
+  - **Who it's for.** Say which buyer the photos, models and colours speak to, and whether that's a clear choice. Clear targeting is a strength to keep, especially when it sets the brand apart from the category leaders (Bloom's imagery and colours speak to women, where AG1 and Huel lean male). Every suggested new shot should fit that same buyer.
+  - **Read at a glance.** If the page shows the whole gallery at once (a grid laid out on the page, not a slider), and each image's message is 2-3 big words a shopper reads without clicking in, credit it. Short headline words on top with the full detail available (a 38-ingredients slide plus the full supplement facts) is the model.
+  - **Taste, for anything you drink or eat.** If it's a drink or a powder you mix, how it tastes is a must-have image, not a nice-to-have.
   - **What's inside.** For anything eaten, drunk or put on skin: the ingredients or nutrition/supplement facts panel, front and centre. Transparency and proof of the claims matter more than perfect phone legibility. Never cut or bury a facts panel because the text is small. At most, suggest a bigger crop of the key lines alongside it.
   - **Proof of the slide-1 claims.** If slide 1 says "all natural, low calorie", something later must prove it.
   - **Bundles and multi-packs:** a slide explaining why buy the pack (why six), ideally backed by a review.
@@ -88,6 +94,19 @@ Decide what kind of product it is (supplement, skincare, makeup, apparel, access
 - A big, well-known brand can get away with less proof. Say so in one line if it applies, but audit to the same bar.
 - Audit the default variant in full. For the others, use the variant sheets from Step 1b. If you need a closer look at one, rerun with `--variant "<name>" --out ./gallery-v2`.
 - Check the product in the images matches what the page sells (right size, flavour, pack count). A 10 oz bag shown on a 5 oz listing is a real problem.
+
+## Step 4b. Fact-check before you write (5 minutes, don't skip)
+
+Plain reviewers win points by catching small, checkable mistakes. Check these against the evidence pack and note each one you find:
+
+1. **Numbers on the images vs the specs.** Every number, weight, size, dimension, count or temperature printed on a slide or diagram: compare it to `buy_box`, `page_text.txt` and the store data. A diagram saying 2.7 lb when the specs say 2.8 lb, or a height label that doesn't match the spec sheet, is a real fix. Also check claims in the copy match the product shown (a set's "storage included" on a single pan).
+2. **Which slides each variant gets.** From the variant sheets: does every colour/flavour/size get its own photos, or do some only get a studio shot while the default gets lifestyle photos? Do any show an out-of-date label or the wrong variant? Name them.
+3. **Price and currency.** If `final_url` has a locale (like /en-fr/) or the prices aren't in the store's home currency, say the page served a foreign version, and use the store data's price. Never quote euro prices to a US brand as its price.
+4. **Video position.** If a video poster appears, confirm from the screenshots where it really sits in the gallery. Store data can list videos last when the page shows them earlier.
+5. **Alt text.** Empty or generic alt text ("image 1", file names) on gallery images and videos hurts search and screen readers. List it as one small fix, not a headline.
+6. **File size and sharpness.** Only per the resolution rule in Step 2: flag images that look blurry on a phone or files heavy enough to slow mobile. Mixed pixel sizes alone are not a problem.
+
+Put mechanical findings under "Fix in what you have". Keep the headline of the report on strategy.
 
 ## Step 5. Write the report
 

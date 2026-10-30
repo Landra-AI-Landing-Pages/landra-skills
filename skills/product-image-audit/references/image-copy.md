@@ -21,7 +21,7 @@ Check each slide's copy for these. Name the technique when a slide uses one well
 - **Claims need proof.** Every claim on slide 1 or 2 ("all natural", "low calorie", "clinically shown") should be backed somewhere in the gallery: a facts panel, a test result, a review. An unproved claim reads as marketing.
 - **The buyer, not the brand.** "You/your dog" lines beat "we/our" lines. Copy written from the buyer's side of the table.
 - **Aspiration and identity.** Lines that let the buyer see the person (or pet) they want to be ("the dog everyone at the park asks about").
-- **Objection handling.** The category's biggest doubt (see category-needs.md) answered in words, not just shown.
+- **Objection handling and FAQs.** The buyer's worries and practical questions (see category-needs.md) answered in words, not just shown. A plain answer to a real question ("Induction-safe", "Made without PTFE, PFOA, PFAS") is top-tier copy even though it reads like a feature, because the buyer asked that question. Credit it and leave it alone. Rewrite only if the answer is vague ("Consciously crafted coating" doesn't answer "what is it made of?").
 - **Social proof in words.** Real quotes, real counts, real names, not slogans.
 - **Contrast.** "Not X, Y" or vs-the-alternative lines that make the difference obvious in a crowded category.
 - **Plain names.** Branded names (a shade called "First Move", a collection name) must say what they are ("Shade: First Move, nude pink"). Big text that means nothing to a new visitor is wasted.
