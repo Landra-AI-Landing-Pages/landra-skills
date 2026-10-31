@@ -369,6 +369,45 @@ def variant_sets(library, all_variant_titles, out_dir, width=300, per=8):
     return made
 
 
+THUMB_W = 320
+
+
+def make_thumb(src_url, local_file, out_path, width=THUMB_W):
+    """Small JPEG (~320px wide) for the visual report, embedded there as a data URI.
+    Tries Pillow, then ImageMagick, then the store CDN's own resizer. Returns the path or None."""
+    if local_file and os.path.exists(local_file):
+        try:
+            from PIL import Image
+            im = Image.open(local_file)
+            im.seek(0)
+            im = im.convert("RGB")
+            im.thumbnail((width, width * 2))
+            im.save(out_path, "JPEG", quality=72, optimize=True, progressive=True)
+            return out_path
+        except Exception:
+            pass
+        for tool in (["magick"], ["convert"]):
+            if shutil.which(tool[0]):
+                try:
+                    subprocess.run(tool + [local_file + "[0]", "-resize", f"{width}x", "-strip", "-quality", "72",
+                                           "-background", "white", "-flatten", out_path],
+                                   capture_output=True, timeout=60)
+                    if os.path.exists(out_path) and os.path.getsize(out_path) > 0:
+                        return out_path
+                except Exception:
+                    pass
+    small = sized(src_url, width)
+    if src_url and small != src_url:
+        try:
+            _, data = fetch(small, timeout=30)
+            if data[:3] == b"\xff\xd8\xff" and len(data) < 150000:
+                open(out_path, "wb").write(data)
+                return out_path
+        except Exception:
+            pass
+    return None
+
+
 def find_chrome():
     return next((c for c in ("google-chrome", "chromium", "chromium-browser", "chrome") if shutil.which(c)), None)
 
@@ -679,6 +718,12 @@ def main():
                     v["poster_file"] = f
                 except Exception:
                     pass
+        tdir = os.path.join(a.out, "thumbs")
+        os.makedirs(tdir, exist_ok=True)
+        for it in items:
+            t = make_thumb(it.get("src"), it.get("file"), os.path.join(tdir, f"{it['position']:02d}.jpg"))
+            it["thumb"] = t
+        manifest["thumbs"] = sum(1 for it in items if it.get("thumb"))
     json.dump(manifest, open(os.path.join(a.out, "manifest.json"), "w"), indent=2)
     print(json.dumps({k: v for k, v in manifest.items() if k not in ("items", "other_page_images", "variant_sets")}, indent=2))
     for it in items:

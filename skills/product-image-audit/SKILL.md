@@ -5,7 +5,7 @@ description: Audits a product page's image gallery and the copy on each image. F
 
 # Product Image Audit
 
-You audit the image gallery (the carousel at the top of a product page). The goal is a short, specific report: what each image does, what's missing for this kind of product, the order to put them in, and a brief for every image they should add.
+You audit the image gallery (the carousel at the top of a product page). The goal is a short, specific report, delivered as a visual HTML report with the shopper's real images: what each image does, what's missing for this kind of product, the order to put them in, and a brief for every image they should add.
 
 ## Inputs
 
@@ -21,7 +21,7 @@ Run the extractor. It needs Python 3 only.
 python3 <skill-dir>/scripts/extract_gallery.py "<product-url>" --out ./gallery
 ```
 
-It writes `./gallery/manifest.json` and one file per image (`01.png`, `02.jpg`, ...) in gallery order. Read the summary it prints, and always read `notes`:
+It writes `./gallery/manifest.json` and one file per image (`01.png`, `02.jpg`, ...) in gallery order. It also saves small thumbnails (`thumbs/01.jpg`, ...) for the visual report. Read the summary it prints, and always read `notes`:
 
 - `live_page_seen: false` (notes start with "COULD NOT SEE THE LIVE PAGE"): the browser failed, so the gallery, price and size may be wrong. Rerun the extractor once. If it still fails, look at the live page with a browser or fetch tool if you have one. If you can't, put this as the FIRST line of your report: "I couldn't load your live page, so this audit uses your store's product data. Check the slide count and price against your page." Never present a store-data-only gallery as what shoppers see.
 
@@ -110,7 +110,16 @@ Put mechanical findings under "Fix in what you have". Keep the headline of the r
 
 ## Step 5. Write the report
 
-Use `references/report-template.md`. Keep it tight. Rules:
+The deliverable is a visual HTML report built from your audit. Read `references/report-artifact.md` first.
+
+1. Write the audit as `report.json` (shape in `report-artifact.md`). The content follows `references/report-template.md`: same sections, same rules below.
+2. Render it: `python3 <skill-dir>/scripts/render_report.py report.json --gallery ./gallery --out image-audit-<product>.html`. It embeds the gallery thumbnails, so the file works offline and inside an artifact.
+3. Deliver the HTML: in Claude Code give the file path; in the Claude app share the file (or show it as an HTML artifact). Then a 3-line chat summary: must-have score, biggest gap, best copy fix.
+4. If the user asks for a text version, run `render_report.py report.json --md` and paste it.
+
+If you can't run scripts at all, write the markdown report from `report-template.md` instead.
+
+Content rules (they apply to every field you write):
 
 - **Be specific to this product.** "Add a scale shot" is weak. "Add a hand holding the pouch next to a phone, so people see it's pocket-sized" is the standard.
 - **Don't invent facts.** If a brief needs a number (a clinical result, a review count, a dimension), use a placeholder like `[your clinical result]` unless the page or the user gave the real number.
