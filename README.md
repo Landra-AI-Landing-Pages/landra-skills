@@ -1,6 +1,6 @@
 # Landra Skills
 
-Free Claude skills for DTC brands, from [Landra](https://landra.com) (the landing page builder Ezra Rufino runs).
+Free Claude skills for DTC brands, from [Landra](https://www.getlandra.com/?utm_source=github&utm_medium=readme&utm_campaign=landra-skills) (the landing page builder Ezra Rufino runs).
 
 ## Product Image Audit
 
