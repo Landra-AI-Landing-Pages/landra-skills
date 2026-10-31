@@ -13,6 +13,8 @@ Paste a product page link. Claude pulls every image in your gallery in order, ch
 
 You get it as a visual report: your real images, a score for the must-have shots, a chart of how far your image copy climbs (feature, benefit, end result), before/after rewrites, and the new order as a strip. Ask for the "text version" if you want plain text.
 
+![Example report](docs/report-example.jpg)
+
 ### Install in the Claude app
 1. Download `product-image-audit.zip` from Releases. Leave it zipped.
 2. In Claude: **Settings → Capabilities**. Turn on code execution, and allow network access so the skill can read your page.
