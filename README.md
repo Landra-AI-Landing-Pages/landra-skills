@@ -33,8 +33,37 @@ Or: `git clone` the repo, then copy `skills/product-image-audit` into `~/.claude
 
 Works best with Chrome installed: the skill takes screenshots of the live page to check what shoppers really see.
 
-## What it won't do
+### What it won't do
 It doesn't invent numbers, generate images, publish anything, or promise a conversion lift. It only reads public pages.
+
+## Avatar to Angles
+
+Give Claude your customer avatar and the research behind it (reviews, Reddit threads, support tickets). It works in three steps and stops after each one so you stay in control:
+1. **Understands the avatar.** Pulls out the problem in their words, the moment it hits, what they blame, what they already tried, what scares them about buying, and the words they use. Every point is backed by a real quote, and it tells you what the research is missing.
+2. **Finds 5 angles.** Five different ways into your customer's head, each with the quotes it stands on, the awareness stage, and the format it fits best. It names the obvious angle every brand in your category runs, so you don't get five versions of it.
+3. **Starts the page or the ad.** For the angle you pick: advertorial headlines, a subheadline and the opening paragraphs, listicle headlines and item titles, or ad hooks and a 15-second script opening. It does not write the full page.
+
+It knows when to use your customer's exact words, when to tighten them and when to rephrase, and it never makes up a quote, a review or a number.
+
+Works best inside a Claude Project (or ChatGPT Project) that already holds your customer research.
+
+### Install in the Claude app
+1. Download [`avatar-to-angles.zip`](https://github.com/Landra-AI-Landing-Pages/landra-skills/releases/download/avatar-to-angles-v1.0/avatar-to-angles.zip). Leave it zipped.
+2. In Claude: **Customize → Skills → + → Upload a skill**, then pick the ZIP and switch it on.
+3. Open the Project with your research and ask: "Use avatar-to-angles. Give me 5 angles for this avatar."
+
+### Install in Claude Code
+Paste this into Claude Code:
+```
+https://github.com/Landra-AI-Landing-Pages/landra-skills.git
+Clone this and add the avatar-to-angles skill.
+```
+Or: `git clone` the repo, then copy `skills/avatar-to-angles` into `~/.claude/skills/`.
+
+### What it won't do
+It doesn't invent customers, quotes, reviews, studies or numbers, and it won't write medical scare or "fixed forever" claims. If you have no research yet, it tells you what to gather first.
+
+Built from the headline and copy rules inside [Landra](https://www.getlandra.com/?utm_source=github&utm_medium=readme&utm_campaign=avatar-to-angles) (Ezra's company), which writes full advertorials and listicles from your brand.
 
 ## License
 MIT

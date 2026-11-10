@@ -9,3 +9,5 @@ Product Image Audit was written from scratch. Before writing it we read and ran 
 - `Liamrjohnston/landing-page-master-skill`: the blind-test method we adapted for our own testing.
 
 None of them read a live product gallery or look at the actual images. That's the gap this skill fills. The category lists come from Ezra Rufino's 14 years building DTC product and landing pages.
+
+Avatar to Angles was written from the copy rules inside Landra's own page generator (headline frames, listicle headline slots, advertorial opening modes, objection types, awareness stages, and the claim limits for regulated categories), plus the customer research method from Ezra Rufino's Advertorial & Listicle Course on YouTube.
