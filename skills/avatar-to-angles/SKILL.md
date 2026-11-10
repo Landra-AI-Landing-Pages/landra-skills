@@ -68,7 +68,7 @@ Gaps: [what the research doesn't tell us, and how to find it]
 Rules:
 - Every line has a quote or a source under it. If it doesn't, it goes in Gaps.
 - Count. "6 quotes" is more useful than "many customers".
-- Use "they" for the customer. Don't assume a gender, an age or a job unless the quotes show it. If the research does show a clear group (for example most quotes come from people in their 50s), say so and give the count.
+- Decide the avatar's gender from the research. If the quotes clearly come from women, the avatar is a woman and you write "she/her". If they clearly come from men, "he/him". If it's mixed or unclear, use "they" and say so in Gaps. Same for age and job: only what the quotes show, with counts (for example "9 of 12 quotes mention being over 45").
 - If there are 2 or 3 avatars, do a short snapshot for each and say which one has the most evidence behind it.
 
 ---
@@ -140,7 +140,7 @@ Then offer the next step in one line (for example "Want the ad hooks for this an
 4. **Don't name the brand in the headline** of an advertorial or problem-led listicle. The product comes in later, once the reader cares.
 5. **Plain words.** A 10-year-old should understand every word in a headline. Category jargon ("bioavailability", "mechanism", "formulation") goes in the body, explained, or not at all.
 6. **No AI tells.** No em dashes in copy (use a period, comma, colon or parentheses). None of: game-changer, unlock, elevate, transform your, take it to the next level, in today's world, picture this, imagine, here's the thing, the truth is. No clock times in hooks ("It's 2:47pm..."). No three-fragment drumrolls ("Not X. Not Y. Z.").
-7. **Use "they" for the customer** in everything you write about them. Name a group in a headline (for example "people over 50") only when the quotes show it.
+7. **Gender comes from the research, not a guess.** Once the avatar is built, refer to it the way the research shows: "she/her" for a woman, "he/him" for a man, "they" only when it's mixed or unclear. The same goes for headlines: "women over 50" is fine when the quotes show it. Before an avatar exists (generic prompts, research instructions), stay neutral, because you don't know who the customer is yet.
 8. **One angle per page.** If the user asks for a page that mixes three angles, suggest splitting it and testing them as separate pages.
 
 Before you hand anything over, run the checks at the end of `references/headlines.md`.

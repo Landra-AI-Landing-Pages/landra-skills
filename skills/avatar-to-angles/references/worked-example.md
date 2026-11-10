@@ -14,21 +14,22 @@ Use this to see the level of detail expected. Don't copy the wording for a diffe
 
 ## Stage 1: avatar snapshot (short)
 
-AVATAR SNAPSHOT: "Sam", early 50s, removes peach fuzz from their face and worries it makes things worse
+AVATAR SNAPSHOT: "Diane", early 50s, removes peach fuzz from her face and worries it makes things worse
 
-- The problem, in their words: "the way the foundation sits on my peach fuzz" (r/makeuptips)
+- Who: a woman in her early 50s. The quotes come from women talking about makeup and their own facial hair ("at least 95% of women I see..."), so the avatar is a woman and we write "she".
+- The problem, in her words: "the way the foundation sits on my peach fuzz" (r/makeuptips)
 - The moment it hits: putting on makeup. Foundation shows the fuzz.
 - How it feels: like the only one ("at least 95% of women I see don't have as much...")
-- What they think causes it: having more fuzz than other people
-- What they tried: laser (only works on dark hair), waxing, creams, shaving
-- What they want: "soft and smooth" skin, makeup that goes on smooth
-- What scares them: rough regrowth ("sandpaper for weeks"). Also the tool breaking ("the charger stops working")
-- Words they use: peach fuzz, foundation sits, soft, smooth, grow back, sandpaper
-- Words they'd never use: vellus hair, exfoliation, radiant complexion
+- What she thinks causes it: having more fuzz than other people
+- What she tried: laser (only works on dark hair), waxing, creams, shaving
+- What she wants: "soft and smooth" skin, makeup that goes on smooth
+- What scares her: rough regrowth ("sandpaper for weeks"). Also the tool breaking ("the charger stops working")
+- Words she uses: peach fuzz, foundation sits, soft, smooth, grow back, sandpaper
+- Words she'd never use: vellus hair, exfoliation, radiant complexion
 - Awareness: solution-aware. They know the fixes and have tried several.
 
 Strongest evidence: makeup sitting on the fuzz, fear of rough regrowth, laser not working on light hair.
-Gaps: no price objection data. No quotes on how often they'd need to repeat it. Find: 1 to 3 star reviews of competing tools.
+Gaps: no price objection data. No quotes on how often she'd need to repeat it. Find: 1 to 3 star reviews of competing tools.
 
 ## Stage 2: five angles
 
@@ -71,7 +72,7 @@ Promises: a fix that works on light, fine hair
 Stands on: the age signal in the research (check the count before running this)
 Awareness: problem-aware   Best as: listicle + ad
 Example headline: How to get rid of peach fuzz on your face when you're over 50
-Watch out: only run if the research really skews 50+. Use "people over 50", not a gender, unless the brand chooses to target one.
+Watch out: only run if the research really skews 50+. The quotes come from women, so "women over 50" is fine here.
 
 ANGLE 5: The thicker-hair myth  (myth breaker)
 The angle: Removing peach fuzz doesn't make it grow back thicker. The rough feel comes from cutting the hair, not from more hair.
@@ -97,11 +98,11 @@ Candidates:
 4. (myth breaker) A better foundation won't hide peach fuzz. Here's what will.
 5. (real cause) It's not your foundation. It's the peach fuzz underneath it (and how to get rid of it).
 
-My pick: 5. It flips what they blame and the promise is visible.
+My pick: 5. It flips what she blames and the promise is visible.
 
 Subheadline: Why makeup catches on the fine hair on your face, and the at-home fix people do before they put anything on.
 
-Opening mode: the reader's past decision (they've already tried new foundations).
+Opening mode: the reader's past decision (she's already tried new foundations).
 
 Opening:
 > You've probably switched foundations more than once trying to get it to sit smooth.

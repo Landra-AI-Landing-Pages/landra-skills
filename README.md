@@ -48,7 +48,7 @@ It knows when to use your customer's exact words, when to tighten them and when 
 Works best inside a Claude Project (or ChatGPT Project) that already holds your customer research.
 
 ### Install in the Claude app
-1. Download [`avatar-to-angles.zip`](https://github.com/Landra-AI-Landing-Pages/landra-skills/releases/download/avatar-to-angles-v1.0/avatar-to-angles.zip). Leave it zipped.
+1. Download [`avatar-to-angles.zip`](https://github.com/Landra-AI-Landing-Pages/landra-skills/releases/download/avatar-to-angles-v1.1/avatar-to-angles.zip). Leave it zipped.
 2. In Claude: **Customize → Skills → + → Upload a skill**, then pick the ZIP and switch it on.
 3. Open the Project with your research and ask: "Use avatar-to-angles. Give me 5 angles for this avatar."
 

@@ -126,5 +126,5 @@ Not allowed for supplements, food and drink, beauty, pet or fitness: anything th
 - [ ] Listicle: same number in all five, matching the item count, every verb has its object?
 - [ ] Five candidates use five different frames and at least three different opening shapes?
 - [ ] No em dashes, no clock times, no banned words (see SKILL.md rule 6)?
-- [ ] "They", not "she" or "he", when talking about the customer?
+- [ ] Gender, age and group in the copy match what the research shows (she/he when the avatar is clearly a woman or a man, "they" only when it's mixed or unclear)?
 - [ ] Would this headline make the avatar think "that's me"? If it would work just as well for a different group, rewrite it.

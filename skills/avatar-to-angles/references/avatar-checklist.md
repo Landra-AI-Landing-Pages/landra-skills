@@ -53,7 +53,7 @@ Category or marketing language that would make them feel sold to ("vellus hair",
 Used for: a list of words to keep out.
 
 **11. Who they are, only where the quotes show it**
-Age range, life stage, situation, what was happening when they bought. Only what the research shows, with counts ("7 of 12 quotes mention being over 45"). Don't assume a gender. If the research clearly shows one, you can note it as a fact about the research, and still write "they".
+Age range, life stage, situation, what was happening when they bought. Only what the research shows, with counts ("7 of 12 quotes mention being over 45"). Gender too: if the quotes clearly come from women, the avatar is a woman ("she/her"); from men, a man ("he/him"). Give the evidence ("11 of 14 quotes are from women"). If it's mixed or unclear, write "they" and flag it as a gap. Never pick a gender because the category "usually" skews one way.
 Used for: call-out angles and headlines that flag the reader ("over 50", "new runners", "dog owners with a senior dog").
 
 **12. Awareness stage**
