@@ -65,5 +65,33 @@ It doesn't invent customers, quotes, reviews, studies or numbers, and it won't w
 
 Built from the headline and copy rules inside [Landra](https://www.getlandra.com/?utm_source=github&utm_medium=readme&utm_campaign=avatar-to-angles) (Ezra's company), which writes full advertorials and listicles from your brand.
 
+## Landra Strategist
+
+The strategy layer for building landing pages with [Landra](https://www.getlandra.com/?utm_source=github&utm_medium=readme&utm_campaign=landra-strategist) inside Claude. Landra's connector gives Claude the tools to build, edit and publish pages. This skill gives it the judgment:
+- **Portfolio review.** Reads all your pages and tells you what's missing: the reader, angle or format you haven't covered.
+- **Audience research.** Real research into who buys and why they don't, saved as separate avatars so the right one goes into the right page.
+- **Building and refining.** Picks the format, angle and voice before it spends a generation, then knows which fixes to make in chat and which to hand to the editor.
+
+It never invents a testimonial, never turns a review it found into social proof, and asks before every publish.
+
+### Install in the Claude app
+1. Connect Landra first: in any Claude chat click **+ → Connectors → Add connector → Add custom connector**, name it Landra, paste `https://www.getlandra.com/api/mcp`, sign in and click Allow. ([Full guide](https://www.getlandra.com/claude-landing-page-builder?utm_source=github&utm_medium=readme&utm_campaign=landra-strategist))
+2. Download [`landra-strategist.zip`](https://github.com/Landra-AI-Landing-Pages/landra-skills/releases/download/landra-strategist-v1.0/landra-strategist.zip). Leave it zipped.
+3. In Claude: **Customize → Skills → + → Upload a skill**, then pick the ZIP and switch it on.
+4. Ask: "Look at my Landra pages and tell me what's missing."
+
+### Install in Claude Code
+Paste this into Claude Code:
+```
+https://github.com/Landra-AI-Landing-Pages/landra-skills.git
+Clone this and add the landra-strategist skill.
+```
+Or: `git clone` the repo, then copy `skills/landra-strategist` into `~/.claude/skills/`. You also need the Landra connector added (URL above).
+
+### What it won't do
+It doesn't write fake reviews or quotes, publish without asking, or burn generation credits on a change an edit can make.
+
+Landra is Ezra Rufino's company. You need a Landra account to use this skill.
+
 ## License
 MIT
